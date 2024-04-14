@@ -1,0 +1,117 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.header-container {
+  margin: 0;
+  padding: 5px 40px;
+  display: flex;
+  max-width: 100vw;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d8f0f0;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+.logo-text {
+  margin-left: 10px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #4eb3d3;
+  align-self: center;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.option {
+  padding: 10px 20px;
+  transition-duration: 0.6ms;
+  line-height: 1.4;
+  position: relative;
+  white-space: nowrap;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+.option:hover,
+.option:active {
+  letter-spacing: 1.7px;
+  color: #4eb3d3;
+  transform: scale(1.05);
+}
+
+.option:after,
+.option:before {
+  border: 0px solid #4eb3d3;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 300ms ease-in-out;
+  width: 0;
+}
+
+.option:hover:after,
+.option:hover:before {
+  border: 1px solid #4eb3d3;
+  transition: width 350ms ease-in-out;
+  width: 90%;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  padding: 8px 28px;
+  position: relative;
+  overflow: hidden;
+  background-color: #4eb3d3;
+  transition: background-color 0.5s;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #005f7c;
+  transition: left 0.5s;
+  z-index: -1;
+}
+
+.button:hover::before {
+  left: 0;
+}
