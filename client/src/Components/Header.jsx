@@ -1,14 +1,11 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "./Logo";
 import "./Header.css";
 import MenuIcon from "@mui/icons-material/Menu";
 
 function Header() {
-  const [showMenu, setShowMenu] = useState(false);
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
-  };
+  const location = useLocation();
   return (
     <header className="container">
       <div className="header-container">
@@ -19,12 +16,37 @@ function Header() {
           </div>
         </Link>
         <div className="nav-links">
-          <Link className="option">Home</Link>
-          <Link className="option">Achievements</Link>
-          <Link to="/about-us" className="option">
+          <Link
+            to="/"
+            className={location.pathname === "/" ? "active option" : "option"}
+          >
+            Home
+          </Link>
+          <Link
+            to="/achievements"
+            className={
+              location.pathname === "/achievements" ? "active option" : "option"
+            }
+          >
+            Achievements
+          </Link>
+          <Link
+            to="/about-us"
+            className={
+              location.pathname === "/about-us" ? "active option" : "option"
+            }
+          >
             About Us
           </Link>
-          <Link className="option">Contact Us</Link>
+
+          <Link
+            to="/contact-us"
+            className={
+              location.pathname === "/contact-us" ? "active option" : "option"
+            }
+          >
+            Contact Us
+          </Link>
         </div>
         <div className="auth-buttons">
           <Link className="button">Sign Up</Link>

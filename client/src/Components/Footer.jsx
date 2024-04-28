@@ -16,7 +16,7 @@ function Footer() {
       <div className="footer-details">
         <div>
           <h3>
-            <Link>Lemevo</Link>
+            <Link>Lumevo</Link>
           </h3>
           <p>
             SOP Maker is India's most trusted SOP writing services brand. With
@@ -72,7 +72,7 @@ function Footer() {
         >
           <span>Copyright</span>
           <CopyrightIcon style={{ alignSelf: "center", marginLeft: "5px" }} />
-          {currentYear} - Lemvo
+          {currentYear} - Lumevo
         </h3>
       </div>
     </footer>
