@@ -1,0 +1,13 @@
+.about-2-container {
+  height: 500px;
+}
+.heading-slider {
+  text-align: center;
+}
+
+.slider {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}

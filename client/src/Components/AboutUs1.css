@@ -1,0 +1,33 @@
+.about-container {
+  background-color: #f6f8f8;
+  padding: 50px 50px 100px 50px;
+  display: flex;
+}
+
+.about-1 {
+  position: relative;
+}
+
+.about-1-1 {
+  width: 60%;
+  margin-top: 100px;
+  margin-left: 100px;
+  color: #4a4a4a;
+}
+
+.about-1-1 h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+.about-1-2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(60%);
+}
+
+.about-image-1 {
+  width: 100%;
+  max-width: 350px;
+}

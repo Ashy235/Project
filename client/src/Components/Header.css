@@ -13,6 +13,7 @@
   background-color: #d8f0f0;
   box-sizing: border-box;
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .logo-container {
@@ -54,26 +55,20 @@
 
 .option:hover,
 .option:active {
-  letter-spacing: 1.7px;
+  transform: scale(1.05);
+}
+
+.active {
   color: #4eb3d3;
   transform: scale(1.05);
 }
 
-.option:after,
-.option:before {
-  border: 0px solid #4eb3d3;
-  content: " ";
+.active:after {
+  border: 1px solid #4eb3d3;
+  content: "";
   display: block;
   margin: 0 auto;
   position: relative;
-  transition: all 300ms ease-in-out;
-  width: 0;
-}
-
-.option:hover:after,
-.option:hover:before {
-  border: 1px solid #4eb3d3;
-  transition: width 350ms ease-in-out;
   width: 90%;
 }
 
@@ -114,4 +109,8 @@
 
 .button:hover::before {
   left: 0;
+}
+
+.signup-portal {
+  position: absolute;
 }
