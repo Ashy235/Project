@@ -3,9 +3,15 @@ import { Link, useLocation } from "react-router-dom";
 import Logo from "./Logo";
 import "./Header.css";
 import MenuIcon from "@mui/icons-material/Menu";
+import SignUp from "./SignUp";
 
 function Header() {
   const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleSignup = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <header className="container">
       <div className="header-container">
@@ -38,7 +44,6 @@ function Header() {
           >
             About Us
           </Link>
-
           <Link
             to="/contact-us"
             className={
@@ -49,8 +54,11 @@ function Header() {
           </Link>
         </div>
         <div className="auth-buttons">
-          <Link className="button">Sign Up</Link>
-          <Link className="button">Log In</Link>
+          <button onClick={toggleSignup} className="button">
+            Sign Up
+          </button>
+          {isOpen && <SignUp />}
+          <button className="button">Log In</button>
         </div>
       </div>
     </header>

@@ -1,12 +1,10 @@
 .about-container {
   background-color: #f6f8f8;
-  width: 100%;
-  max-width: 100%;
+  padding: 50px 50px 100px 50px;
   display: flex;
 }
 
 .about-1 {
-  margin: 50px 0;
   position: relative;
 }
 
@@ -18,7 +16,7 @@
 }
 
 .about-1-1 h1 {
-  font-size: 40px;
+  font-size: 50px;
   margin-bottom: 0;
 }
 
@@ -26,7 +24,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  transform: translateX(100%);
+  transform: translateX(60%);
 }
 
 .about-image-1 {

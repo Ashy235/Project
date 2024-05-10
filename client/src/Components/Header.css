@@ -110,3 +110,7 @@
 .button:hover::before {
   left: 0;
 }
+
+.signup-portal {
+  position: absolute;
+}

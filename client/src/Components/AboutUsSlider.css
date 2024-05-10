@@ -1,0 +1,27 @@
+.swiper-container {
+  height: 300px;
+  width: 800px;
+  border-radius: 9999px;
+  background: #4a4a4a;
+  border-top: 15px solid #005f7c;
+}
+
+.swiper-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 30%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.slider-content * {
+  color: #f6f8f8;
+  text-align: center;
+}
+
+.slider-content h1 {
+  font-size: 28px;
+}

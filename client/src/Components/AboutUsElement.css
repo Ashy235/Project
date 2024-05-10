@@ -1,0 +1,36 @@
+.about-element {
+  padding: 50px 150px 50px 150px;
+  background-color: #f6f8f8;
+}
+
+.element {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.element-image {
+  width: 400px;
+  max-width: 400px;
+}
+
+.element-image img {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.element-text {
+  flex: 1;
+  width: 100%;
+  max-width: 500px;
+}
+
+.element-text p,
+h1 {
+  color: #4a4a4a;
+}
+
+.element-text h1 {
+  font-size: 40px;
+}

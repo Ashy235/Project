@@ -5,7 +5,7 @@ import Home2 from "../Components/Home2";
 import Footer from "../Components/Footer";
 function Home() {
   return (
-    <div>
+    <div className="portal-signup">
       <Header />
       <Home1 />
       <Home2 />
